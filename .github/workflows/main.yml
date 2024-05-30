@@ -1,0 +1,16 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - nexus
+
+jobs:
+
+# Do something
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo "hello world "
