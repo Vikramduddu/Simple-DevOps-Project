@@ -9,8 +9,18 @@ jobs:
 
 # Do something
 
-  deploy:
+ build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        run: echo "hello world "
+  steps:
+    run: echo "hello world " 
+  
+  test:
+    runs-on: ubuntu-latest
+  steps:
+    run: echo hello world
+
+  build:
+   needs: test 
+   runs-on: ubuntu-latest
+  steps:
+    run: echo "hello world "
