@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
   steps:
   - name: second try
-    run: echo hello world
+    run: echo "hello world"
 
   deploy:
    needs: test 
